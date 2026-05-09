@@ -23,9 +23,9 @@ selling and buying agriculture products &amp; enjoy the
             <span>profit</span>
 !
           </h2>
-          <button type="button" className="btn">
+          <Link to="/login" className="btn">
             Start here
-          </button>
+          </Link>
         </div>
       </div>
       <div className="o-col">
