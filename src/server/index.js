@@ -8,6 +8,7 @@ const db = require('./database');
 const data = db.initDatabase();
 
 const app = express();
+const port = process.env.PORT || 8080;
 
 app.use(cors());
 
@@ -33,4 +34,4 @@ app.get('*', (req, res) => {
   res.sendFile(path.resolve(`${__dirname}`, '..', '..', 'dist/index.html'));
 });
 
-app.listen(8080, () => console.log('Listening on port 8080!'));
+app.listen(port, () => console.log(`Listening on port ${port}!`));
